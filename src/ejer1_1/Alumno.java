@@ -7,10 +7,18 @@ public class Alumno extends Persona {
 	public Alumno() {
 		esRepetidor = false;
 	}
+	
+	public Alumno(String nombre, int edad, String sexo, String nacionalidad, boolean esRepetidor) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.nacionalidad = nacionalidad;
+		this.esRepetidor = esRepetidor;
+	}
 
 	@Override
 	public String toString() {
-		return String.format("Alumno: \nesRepetidor=%s", esRepetidor);
+		return super.toString() + String.format("\n¿Es repetidor: %b", esRepetidor);
 	}
 
 	

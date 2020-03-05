@@ -11,10 +11,10 @@ public class Persona {
 	
 	public Persona() {
 		
-		nombre = "Default";
-		edad = 0;
-		sexo = "Hombre";
-		nacionalidad = "Española";
+		this.nombre = "Default";
+		this.edad = 0;
+		this.sexo = "Hombre";
+		this.nacionalidad = "Española";
 		
 	}
 
@@ -22,7 +22,7 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return String.format("Persona: \nNombre=%s\nEdad=%s\nSexo=%s\nNacionalidad=%s", nombre, edad, sexo,
+		return String.format("Nombre=%s\nEdad=%s\nSexo=%s\nNacionalidad=%s", nombre, edad, sexo,
 				nacionalidad);
 	}
 	
